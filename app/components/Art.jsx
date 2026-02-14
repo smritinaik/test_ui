@@ -3,6 +3,10 @@ import gsap from 'gsap';
 import { useMediaQuery } from 'react-responsive'
 import { useGSAP } from '@gsap/react'
 import { featureLists, goodLists } from '../constants';
+import ScrollTrigger from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 
 const Art = () => {
  const isMobile = useMediaQuery({ maxWidth: 767 });
@@ -29,7 +33,7 @@ const Art = () => {
  return (
 	<div id="art">
 	 <div className="container mx-auto h-full pt-20">
-		<h2 className="will-fade">The ART</h2>
+		<h2 className="will-fade">FUTURE</h2>
 		
 		<div className="content">
 		 <ul className="space-y-4 will-fade">
@@ -60,10 +64,10 @@ const Art = () => {
 		</div>
 		
 		<div className="masked-container">
-		 <h2 className="will-fade">Sip-Worthy Perfection</h2>
+		 <h2 className="will-fade">Engineered to Inspire</h2>
 		 <div id="masked-content">
-			<h3>Made with Craft, Poured with Passion</h3>
-			<p>This isn’t just a drink. It’s a carefully crafted moment made just for you.</p>
+			<h3>Where Vision Meets Technology</h3>
+			<p>Not just a product — a next-generation experience built to inspire</p>
 		 </div>
 		</div>
 	 </div>
