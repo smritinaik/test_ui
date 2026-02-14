@@ -33,7 +33,7 @@ const Art = () => {
  return (
 	<div id="art">
 	 <div className="container mx-auto h-full pt-20">
-		<h2 className="will-fade">FUTURE</h2>
+		<h2 className="will-fade">TheART</h2>
 		
 		<div className="content">
 		 <ul className="space-y-4 will-fade">

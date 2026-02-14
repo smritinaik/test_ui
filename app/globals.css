@@ -15,6 +15,20 @@
     --font-serif: "DM Serif Text", serif;
 }
 
+@keyframes fireBorder {
+  0% { border-color: #ff0000; }
+  25% { border-color: #ff9900; }
+  50% { border-color: #ffff00; }
+  75% { border-color: #ff5500; }
+  100% { border-color: #ff0000; }
+}
+
+.border-gradient {
+  border-image: linear-gradient(to right, #ff0000, #ff9900, #ffff00, #ff5500) 1;
+  animation: fireBorder 1.5s linear infinite;
+}
+
+
 html,
 body {
     width: 100%;
